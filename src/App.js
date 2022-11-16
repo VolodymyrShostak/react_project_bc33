@@ -1,5 +1,5 @@
 import UniversityPage from "./pages/universityPage";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (

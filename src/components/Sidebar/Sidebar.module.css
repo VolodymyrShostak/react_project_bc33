@@ -3,3 +3,15 @@
   height: 80px;
   background-color: black;
 }
+.item {
+  margin: 24px;
+  display: flex;
+  align-items: center;
+}
+.link {
+  margin-left: 24px;
+  text-transform: uppercase;
+}
+.decoration {
+  text-decoration: none;
+}
