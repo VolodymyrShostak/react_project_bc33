@@ -13,7 +13,7 @@ const Sidebar = (props) => {
             return (
               <a key={nanoid()} className={s.link} href="">
                 <img src={el.img} alt="" />
-                <span className={s.link}>{el.name}</span>
+                <span>{el.name}</span>
               </a>
             );
           })}

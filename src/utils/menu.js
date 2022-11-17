@@ -1,10 +1,10 @@
-import university from "../assets/university.png";
+import University from "../assets/University.svg";
 import faculty from "../assets/faculty.png";
 
 export const menuConfig = [
   {
     name: "Університет",
-    img: university,
+    img: University,
   },
 
   {
