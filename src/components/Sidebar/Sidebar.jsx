@@ -1,6 +1,6 @@
 import s from "./Sidebar.module.css";
 import { nanoid } from "nanoid";
-import avatar from "../../assets/avatar.png";
+import avatar from "../../assets/avatar.svg";
 import { menuConfig } from "../../utils/menu";
 
 const Sidebar = (props) => {

@@ -1,5 +1,5 @@
 import University from "../assets/University.svg";
-import faculty from "../assets/faculty.png";
+import faculty from "../assets/faculty.svg";
 
 export const menuConfig = [
   {
