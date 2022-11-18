@@ -1,4 +1,4 @@
-import UniversityPage from "./pages/universityPage";
+import UniversityPage from "./pages/UniversityPage";
 import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {

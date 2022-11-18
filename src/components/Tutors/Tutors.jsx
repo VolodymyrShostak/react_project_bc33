@@ -10,7 +10,7 @@ const Tutors = () => {
       <div>
         <div>Руденко</div>
         <div>Марія</div>
-        <div>Олександровна</div>
+        <div>Олександрівна</div>
       </div>
       <div>
         <div>
