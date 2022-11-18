@@ -8,11 +8,11 @@ const CitiesList = () => {
   const { cities } = data;
   return (
     <CitiesListWrapper>
-      <ul>
+     
         {cities.map((el) => {
           return <EditField key={nanoid()} title={el} />;
         })}
-      </ul>
+     
     </CitiesListWrapper>
   );
 };
