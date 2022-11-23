@@ -1,43 +1,53 @@
 import React from "react";
-import phone from "../../assets/phone.svg";
-import email from "../../assets/email.svg";
+import phoneImg from "../../assets/phone.svg";
+import emailImg from "../../assets/email.svg";
 import geo from "../../assets/geo.svg";
-import {
-  TutorsWrapper,
-  LinkWrapper,
-  ImageWrapper,
-  DataWraper,
-} from "./Tutors.styled";
+import PropTypes from "prop-types";
+import { TutorsWrapper, LinkWrapper, ImageWrapper } from "./Tutors.styled";
 
-const Tutors = () => {
+const Tutors = ({
+  firstName,
+  lastName,
+  patronymic,
+  phone,
+  email,
+  city,
+  options,
+}) => {
   return (
     <TutorsWrapper>
       <div>
-        <div>Руденко</div>
-        <div>Марія</div>
-        <div>Олександрівна</div>
+        <div>{lastName}</div>
+        <div>{firstName}</div>
+        <div>{patronymic}</div>
       </div>
       <div>
-        <DataWraper>
-          <ImageWrapper src={phone} alt="" />
-          <LinkWrapper href="tel:+380993457809">+38 (099) 345 7809</LinkWrapper>
-        </DataWraper>
         <div>
-          <ImageWrapper src={email} alt="" />
-          <LinkWrapper href="mailto:rudenko@gmail.com">
-            rudenko@gmail.com
-          </LinkWrapper>
+          <ImageWrapper src={phoneImg} alt="" />
+          <LinkWrapper href={`tel:${phone}`}>{phone}</LinkWrapper>
+        </div>
+        <div>
+          <ImageWrapper src={emailImg} alt="" />
+          <LinkWrapper href={`mailto:${email}`}>{email}</LinkWrapper>
         </div>
         <div>
           <ImageWrapper src={geo} alt="" />
-          <span>Полтава</span>
+          <span>{city}</span>
         </div>
       </div>
-      <div>
-        Создание групп, создание стран, редактировани профилей преподавателей
-      </div>
+      <div>{options}</div>
     </TutorsWrapper>
   );
 };
 
 export default Tutors;
+
+Tutors.propTypes = {
+  firstName: PropTypes.string.isRequired,
+  lastName: PropTypes.string.isRequired,
+  patronymic: PropTypes.string.isRequired,
+  phone: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  city: PropTypes.string.isRequired,
+  options: PropTypes.string.isRequired,
+};

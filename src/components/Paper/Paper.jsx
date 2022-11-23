@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./Paper.module.css";
+import PropTypes from "prop-types";
 
 const Paper = ({ children, width }) => {
   return (
@@ -10,3 +11,8 @@ const Paper = ({ children, width }) => {
 };
 
 export default Paper;
+
+Paper.propTypes = {
+  children: PropTypes.node.isRequired,
+  width: PropTypes.string,
+};
